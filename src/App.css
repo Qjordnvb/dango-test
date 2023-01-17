@@ -1,0 +1,178 @@
+#root {
+  max-width: 1280px;
+  margin: auto;
+  padding: 1rem;
+  text-align: center;
+}
+
+.App {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+header {
+  background: black;
+  width: 100%;
+  height: 80px;
+}
+
+strong {
+  font-weight: 700;
+  margin-left: 2%;
+}
+
+.text-change-container {
+  padding-bottom: 1rem;
+}
+
+.text-change {
+  background-color: #ead7e5;
+  border: 0.5px solid black;
+  outline: none;
+  height: 30px;
+  width: 20%;
+  color: black;
+}
+
+#holder {
+  font-weight: 700;
+  font-size: 16px;
+}
+
+.ant-card.ant-card-bordered.css-dev-only-do-not-override-1i9hnpv,
+.card-container {
+  display: flex;
+  width: 270px;
+  height: 560px;
+  flex-direction: column;
+}
+
+.ant-card .ant-card-head,
+.card-container {
+  order: 1;
+}
+
+.ant-card-bordered,
+.card-container {
+  margin-left: 3rem;
+  margin-bottom: 3rem;
+  border: 0.5px solid black;
+  box-shadow: 1px 0px 10px 0px rgb(43, 43, 43);
+}
+
+.ant-card-body {
+  order: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 320px;
+}
+
+.card-img {
+  margin: auto;
+  height: 190px;
+  width: 190px !important;
+  margin-top: 2%;
+}
+
+.description-card {
+  font-size: 11px;
+  height: 70px;
+}
+
+.product-price {
+  display: flex;
+  align-items: center;
+  font-weight: 700;
+}
+
+.input-price {
+  width: 40px;
+  height: 20px;
+  background: white;
+  color: black;
+  border: 0.5px solid black;
+  margin-left: 5%;
+}
+
+.ant-card {
+  line-height: 11px !important;
+  text-align: justify;
+}
+
+.btn-card {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  width: 50%;
+}
+
+.btn-1 {
+  background-color: #ead7e5;
+  font-family: "Montserrat", sans-serif !important;
+  height: 35px;
+  color: black;
+  margin-bottom: 15px;
+  margin-top: 50px;
+}
+
+.btn-2 {
+  font-family: "Montserrat", sans-serif !important;
+  text-decoration: underline;
+  text-align: center;
+  color: black;
+}
+
+.total-price {
+  padding-top: 10%;
+}
+
+/* Loader */
+.lds-ring {
+  display: block;
+  position: relative;
+  width: 80px;
+  height: 80px;
+  top: 200px;
+  margin: auto;
+}
+
+.lds-ring div {
+  box-sizing: border-box;
+  display: block;
+  position: absolute;
+  width: 64px;
+  height: 64px;
+  margin: 8px;
+  border: 8px solid #fff;
+  border-radius: 50%;
+  animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+  border-color: hsl(207, 26%, 17%) transparent transparent transparent;
+}
+/*loader*/
+
+.lds-ring div:nth-child(1) {
+  animation-delay: -0.45s;
+}
+
+.lds-ring div:nth-child(2) {
+  animation-delay: -0.3s;
+}
+
+.lds-ring div:nth-child(3) {
+  animation-delay: -0.15s;
+}
+
+@keyframes lds-ring {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+body.dark .lds-ring div {
+  border-color: hsl(209, 23%, 22%) transparent transparent transparent;
+}
